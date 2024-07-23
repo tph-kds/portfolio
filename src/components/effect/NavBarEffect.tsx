@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+// navLinks
+type navLinks = {
+    id: string;
+    title: string;
+}
 
-const NavBarEffect = ({navLinks}) => {
+const NavBarEffect = (navLinks:navLinks[]) => {
 
     
   return (
