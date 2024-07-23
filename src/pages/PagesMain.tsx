@@ -42,7 +42,7 @@ const pagesmain = () => {
 
        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
           <img 
-          src={`${process.env.PUBLIC_URL}/assets/bg.png`}  
+          src={`${process.env.PUBLIC_URL}/public/assets/bg.png`}  
           alt="background" 
           className='w-[100%] h-[100%] relative z-[5] box-s'
           />
