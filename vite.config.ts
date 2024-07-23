@@ -14,5 +14,6 @@ export default defineConfig({
     postcss: {
       plugins: [tailwindcss()],
     },
-  }
+  },
+  base: "/portfolio"
 })
