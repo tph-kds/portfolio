@@ -133,26 +133,26 @@ type Props = {
 export const Props: Props[] = [
   {
     title: "E-Commerce Website",
-    src: `${process.env.PUBLIC_URL}/assets/logo.png`,
+    src: "../../public/assets/logo.png",
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
   },
   {
     title: "Task Management App",
-    src: `${process.env.PUBLIC_URL}/assets/logo.png`,
+    src: "../../public/assets/logo.png",
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
   },
   {
     title: "Portfolio Website",
-    src: `${process.env.PUBLIC_URL}/assets/logo.png`,
+    src: "../../public/assets/logo.png",
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
 
   },
   {
     title: "Blogging Platform",
-    src: `${process.env.PUBLIC_URL}/assets/logo.png`,
+    src: "../../public/assets/logo.png",
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
   },
