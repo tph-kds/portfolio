@@ -29,7 +29,9 @@
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
   "include": ["src"]
 }
