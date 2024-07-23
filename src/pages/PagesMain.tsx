@@ -3,7 +3,7 @@ import "@/custom.css"
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { FaBattleNet } from "react-icons/fa";
-// import bg from "../public/assets/bg.png"
+import bg from "../../public/assets/bg.png"
 
 const pagesmain = () => {
   return ( 
@@ -42,7 +42,7 @@ const pagesmain = () => {
 
        <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
           <img 
-          src={`${process.env.PUBLIC_URL}/public/assets/bg.png`}  
+          src={bg}  
           alt="background" 
           className='w-[100%] h-[100%] relative z-[5] box-s'
           />
