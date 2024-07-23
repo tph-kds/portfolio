@@ -11,7 +11,7 @@ interface NavBarEffectProps {
     navLinks: navLinks[];
   }
 
-const NavBarEffect: React.FC<NavBarEffectProps> = (navLinks:navLinks[]) => {
+const NavBarEffect: React.FC<NavBarEffectProps> = ({navLinks}) => {
 
     
   return (
