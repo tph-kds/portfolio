@@ -6,8 +6,12 @@ type navLinks = {
     id: string;
     title: string;
 }
+// Định nghĩa kiểu cho props của NavBarEffect
+interface NavBarEffectProps {
+    navLinks: navLinks[];
+  }
 
-const NavBarEffect = (navLinks:navLinks[]) => {
+const NavBarEffect: React.FC<NavBarEffectProps> = (navLinks:navLinks[]) => {
 
     
   return (
