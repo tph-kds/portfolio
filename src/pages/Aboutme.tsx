@@ -1,7 +1,7 @@
 import { about_skill, about_text } from '@/contants/contants'
 import styles from '@/style'
 import React from 'react'
-import logo from "../public/assets/logo.png"
+// import logo from "../public/assets/logo.png"
 
 const Aboutme = () => {
   return (
@@ -13,7 +13,7 @@ const Aboutme = () => {
         <div className='flex flex-wrap'>
             <div className='w-full lg:w-1/2 lg:p-8'>
                 <div className={`flex ${styles.flexCenter} `}>
-                    <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="my-image" 
+                    <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt="my-image" 
                          className='rounded-2xl'    
                     />
                 </div>

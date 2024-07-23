@@ -6,7 +6,7 @@ import { useState } from 'react';
 import "@/custom.css"
 import NavBarEffect from '@/components/effect/NavBarEffect';
 import { navLinks } from "@/contants/contants"
-import logo from "../public/assets/logo.png"
+// import logo from "../public/assets/logo.png"
 
 
 
@@ -19,7 +19,7 @@ const NavBar = () => {
         {/* <div className='flex flex-shrink-0 items-center'>
         </div> */}
         {/* <div className='m-8 flex  items-center justify-center gap-4 text-2xl'> */}
-          <img src={logo} 
+          <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} 
             className="sm:w-[100px] sm:h-[100px] w-[50px] h-[50px] rounded-full cursor-pointer transition-transform transition-shadow duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg" 
             alt="logo" 
           />
