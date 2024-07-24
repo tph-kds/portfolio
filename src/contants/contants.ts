@@ -1,4 +1,4 @@
-
+import logo from "../../public/assets/logo.png"
 // navLinks
 type navLinks = {
     id: string;
@@ -133,26 +133,26 @@ type Props = {
 export const Props: Props[] = [
   {
     title: "E-Commerce Website",
-    src: require("../../public/assets/logo.png"),
+    src: logo,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
   },
   {
     title: "Task Management App",
-    src: require("../../public/assets/logo.png"),
+    src: logo,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
   },
   {
     title: "Portfolio Website",
-    src: require("../../public/assets/logo.png"),
+    src: logo,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
 
   },
   {
     title: "Blogging Platform",
-    src: require("../../public/assets/logo.png"),
+    src: logo,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
   },
