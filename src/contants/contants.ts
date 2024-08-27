@@ -1,4 +1,4 @@
-
+import logo from "../../public/assets/logo.png"
 // navLinks
 type navLinks = {
     id: string;
