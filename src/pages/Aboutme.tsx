@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import AnimationText from '@/components/functions/AnimationText';
 import { TextValueProps } from '@/contants/types';
-import logo from "@/../public/assets/logo_1.png";
+import logo from "../../public/assets/logo.png";
 
 const Aboutme = () => {
     const isDark = isCheckedMode();
