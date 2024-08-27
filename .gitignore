@@ -16,6 +16,7 @@ public/assets/svg
 public/constants
 
 
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

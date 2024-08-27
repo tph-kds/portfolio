@@ -17,6 +17,8 @@ npm install react-type-animation
 
 npm install use-local-storage
 
+npm install react-scroll
+
 
 
 

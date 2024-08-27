@@ -3,8 +3,11 @@ import { RiOpenaiFill, RiReactjsLine } from 'react-icons/ri'
 import { FaDocker, FaNodeJs, FaPython } from "react-icons/fa";
 import { SiMongodb, SiPytorch, SiTensorflow } from "react-icons/si";
 import { useEffect, useRef } from 'react';
+import isCheckedMode from '@/components/functions/ischeckedMode';
+import { motion } from 'framer-motion';
 
 const TechPage = () => {
+  const isDark = isCheckedMode();
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
 
@@ -34,11 +37,26 @@ const TechPage = () => {
     }
   }, []);
   return (
-    <div className='border-b border-neutral-800 pb-24'>
-      <h1 className='my-20 text-center text-2xl sm:text-4xl text-white'> Technologies</h1>
+    <div id='technologies' className='border-b border-neutral-800 pb-24'>
+      <motion.h1 
+        initial={{ opacity: 0, y: 100 }}
+        // animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true , amount: 1}}
+
+        className={`${isDark ? "text-white" : "text-black font-semibold"} my-20 text-center text-2xl sm:text-4xl `}> 
+        Technologies
+      </motion.h1>
       <div data-speed="fast" className={` max-w-7xl scroller flex flex-wrap ${styles.flexCenter} gap-4 overflow-hidden whitespace-nowrap md:mx-40`}
       >
-        <div  className="scroller__inner inline-block whitespace-nowrap animate-scroll">
+        <motion.div  
+          initial={{ opacity: 0, x : 200}}
+          // animate={{ opacity: 1, x : 0}}
+          transition={{ duration: 1, delay: 0.5 }}
+          whileInView={{ opacity: 1, x : 0}}
+
+          className="scroller__inner inline-block whitespace-nowrap animate-scroll">
           <div  className=" inline-block m-4 rounded-full border-4 border-emerald-400 p-4 relative icon">
             <RiReactjsLine  className='sm:text-7xl text-4xl text-cyan-600'/>
           </div>
@@ -64,7 +82,7 @@ const TechPage = () => {
             <FaDocker className='sm:text-7xl text-4xl text-blue-50'/>
           </div>
           
-        </div>
+        </motion.div>
       </div>
     </div>
   )

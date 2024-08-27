@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
-// import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss'
 
-module.exports = {
+const config: Config = {
   darkMode: "class",
   content: [
     './pages/**/*.{js, jsx, ts,tsx}',
@@ -34,8 +34,8 @@ module.exports = {
         'light-2': '#EFEFEF',
         'light-3': '#7878A3',
         'light-4': '#5C5C7B',
-        dark: "hsl(var(--color-dark))",
-        light: "hsl(var(--color-light))",
+        "dark": "hsl(var(--color-dark))",
+        "light": "hsl(var(--color-light))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -124,3 +124,5 @@ module.exports = {
     }
   ],],
 }
+
+export default config

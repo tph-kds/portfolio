@@ -46,6 +46,8 @@
   }
 
   .dark {
+    --color-dark: 222.2 47.4% 11.2%;
+    --color-light: 210 40% 98%;
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
@@ -71,6 +73,36 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
+  .light {
+    --color-dark: 222.2 47.4% 11.2%; /* Dark color remains the same for contrast */
+    --color-light: 210 40% 98%; /* Light color remains the same for contrast */
+    --background: 210 40% 98%; /* Light background */
+    --foreground: 222.2 47.4% 11.2%; /* Dark foreground for contrast on light background */
+    --card: 210 40% 98%; /* Light card background */
+    --card-foreground: 222.2 47.4% 11.2%; /* Dark card foreground */
+    --popover: 210 40% 98%; /* Light popover background */
+    --popover-foreground: 222.2 47.4% 11.2%; /* Dark popover foreground */
+    --primary: 222.2 47.4% 11.2%; /* Dark primary color */
+    --primary-foreground: 210 40% 98%; /* Light primary foreground */
+    --secondary: 222.2 47.4% 11.2%; /* Dark secondary color */
+    --secondary-foreground: 210 40% 98%; /* Light secondary foreground */
+    --muted: 222.2 47.4% 11.2%; /* Dark muted color */
+    --muted-foreground: 210 40% 98%; /* Light muted foreground */
+    --accent: 222.2 47.4% 11.2%; /* Dark accent color */
+    --accent-foreground: 210 40% 98%; /* Light accent foreground */
+    --destructive: 0 62.8% 30.6%; /* Same destructive color */
+    --destructive-foreground: 210 40% 98%; /* Light destructive foreground */
+    --border: 222.2 47.4% 11.2%; /* Dark border */
+    --input: 210 40% 98%; /* Light input background */
+    --ring: 212.7 26.8% 83.9%; /* Light ring color */
+    --chart-1: 220 70% 50%; /* Same chart colors */
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+  
 
 
 }

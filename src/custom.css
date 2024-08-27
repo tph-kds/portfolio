@@ -15,6 +15,69 @@
     text-fill-color: transparent;
   }
 
+.light-text-gradient {
+    background: radial-gradient(
+      46.18% 54.18% at 31.16% 75.69%,
+      #7d7e6d 0.89%,
+      #026750 17.23%,
+      #6b999b 42.04%,
+      #1a5557 55.12%,
+      #e00547 71.54%,
+      #011713 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+.text-animation-gradient {
+  background: radial-gradient(46.18% 54.18% at 31.16% 75.69%, 
+  #7d7e6d 0.89%, 
+  #026750 17.23%,
+  #6b999b 42.04%, 
+  #1a5557 55.12%, 
+  #e00547 71.54%, 
+  #81076b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+  .light-logo-gradient {
+    background: radial-gradient(
+      46.18% 54.18% at 31.16% 75.69%,
+      #00e8e8 0.89%,
+      #ab7210 17.23%,
+      #c4b000 42.04%,
+      #1a5557 55.12%,
+      #e00547 71.54%,
+      #170301 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+.text-gradient-hover {
+    background: radial-gradient(
+      12.18% 89.18% at 45.16% 76.69%,
+      #defaf8 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33cfb5 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
   .text-gradient-b-w {
     background: radial-gradient(
       64.18% 64.18% at 71.16% 35.69%,
@@ -73,9 +136,21 @@
     background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
   }
 
+  .light-bg-discount-gradient {
+    background: linear-gradient(354.17deg, #e78284 0%, #39018d 100%);
+  }
   .bg-text-gradient {
     background: linear-gradient(125.17deg, #eed295 0%, #07849e 100%);
   }
+
+  /* .text-gradient-hover {
+    background: linear-gradient(125.17deg, #eed295 0%, #07849e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    
+  } */
 
   .box-shadow {
     box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
@@ -139,8 +214,42 @@
     background: rgba(255, 255, 255, 0.6);
     filter: blur(750px);
   }
+  .rose__gradient {
+    background: rgba(127, 2, 33, 0.6);
+    filter: blur(750px);
+  }
 
+  .light-toggle_gradient {
+   
+    background: radial-gradient(64.18% 64.18% at 71.16% 15.69%,
+     #defaeb 0.89%,
+      #fff 17.23%,
+       #f09dc5 42.04%,
+        #3fc4d48c 55.12%,
+         #24cf93 71.54%,
+          #22b48ef0 100%);
+  }
 
+  .dark-toggle_gradient {
+   
+    background: radial-gradient(75.18% 84.18% at 54.16% 15.69%,
+     #faf7f7 0.89%,
+      #b9b7b7 17.23%,
+       #717171 42.04%,
+        #e2e2e28c 55.12%,
+         #44f6b5 71.54%,
+          #00f4f4f0 80%);
+  }
+
+  .light-title-project {
+    color: rgb(212 46 103);
+
+  }
+
+  .light-link-project {
+    color: #14842f;;
+
+  }
 
 
 
@@ -361,4 +470,24 @@
   overflow: hidden;
   border-radius: 40px;
   background-image: radial-gradient(at top left, #0bd6e58f, transparent), radial-gradient(at top right, #000000, transparent), radial-gradient(at bottom left, #000000, #f7f7f7);
+}
+.light-blur-background {
+  filter: blur(10px);
+  /* background: linear-gradient(to right, rgb(191, 78, 244), rgba(0, 231, 119, 0.5)); */
+  /* opacity: 0.5; */
+  overflow: hidden;
+  border-radius: 40px;
+  background-color: #ffffff;  
+}
+
+
+/* Mode Toggle */
+
+.bg-light-mode {
+  background-color: #f7f7f7;
+
+}
+
+.bg-dark-mode {
+  background-color: #0f0f0f;
 }

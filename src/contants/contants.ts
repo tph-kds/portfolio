@@ -52,33 +52,34 @@ type about_text = {
 export const about_text: about_text[] = [
   {
     id: "1",
-    content: `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`,
+    content: `As a highly dedicated and driven AI Engineer and Data Scientist, I am passionate about harnessing the power of advanced technologies to foster innovation and address complex, real-world challenges. With a robust foundation in machine learning, deep learning, Generative AI, and data analytics, I am adept at developing and deploying sophisticated AI models. My expertise extends to orchestrating end-to-end MLOps pipeline workflows, ensuring that AI solutions not only deliver actionable insights but also translate into measurable, impactful results.
+            My professional journey has equipped me with comprehensive expertise across a diverse range of domains, including natural language processing, computer vision, and recommendation systems. I have consistently demonstrated my ability to design and implement scalable AI-driven solutions that significantly enhance decision-making processes and optimize operational efficiency. My unwavering commitment to continuous learning and professional development keeps me at the cutting edge of technological advancements, enabling me to deliver innovative, forward-thinking solutions that align with the evolving needs of the industry.`,
   },
 ]
 
 type about_skill = {
   id: string;
-  number: string;
+  number: number;
   name: string;
   finall_suffix: string;
 }
 export const about_skill: about_skill[] = [
   { 
-    id: "experience" , 
-    number: "10", 
+    id: "yoExperience" , 
+    number: 1, 
     name: "Year of Experiences",
     finall_suffix: "+"
   },
   { 
-    id: "experience1" , 
-    number: "10", 
-    name: "Year of Experiences",
+    id: "noProjects" , 
+    number: 8, 
+    name: "Number of Projects",
     finall_suffix: "+"
   },
   { 
-    id: "experience2" , 
-    number: "10", 
-    name: "Year of Experiences",
+    id: "noClients" , 
+    number: 10, 
+    name: "Number of Clients",
     finall_suffix: "+"
   },
 
@@ -92,36 +93,38 @@ type Experiences = {
   description: string;
   technologies: string[];
 }
-export const Experience:Experiences[] = [
-  {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
-];
+export const Experience:Experiences[] = []
+
+// export const Experience:Experiences[] = [
+//   {
+//     year: "2023 - Present",
+//     role: "Senior Full Stack Developer",
+//     company: "Google Inc.",
+//     description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
+//     technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+//   },
+//   {
+//     year: "2022 - 2023",
+//     role: "Frontend Developer",
+//     company: "Adobe",
+//     description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
+//     technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+//   },
+//   {
+//     year: "2021 - 2022",
+//     role: "Full Stack Developer",
+//     company: "Facebook",
+//     description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
+//     technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+//   },
+//   {
+//     year: "2020 - 2021",
+//     role: "Software Engineer",
+//     company: "Paypal",
+//     description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
+//     technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+//   },
+// ];
 
 
 // Projects
@@ -129,33 +132,37 @@ type Props = {
   title:string;
   src: string;
   description: string;
+  link: string
 }
 export const Props: Props[] = [
   {
-    title: "E-Commerce Website",
-    src: `${process.env.PUBLIC_URL}/assets/logo.png`,
+    title: "Board Game Recommendation System",
+    src: "../public/assets/logo.png",
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+      "Designed and implemented a sophisticated recommendation system for board games, combining content-based and collaborative filtering techniques. Implemented a web application using Flask and deployed it on local server. The system merges weighted ratings and averages to deliver personalized suggestions, enhancing user experience by recommending", //The system merges weighted ratings and averages to deliver personalized suggestions, enhancing user experience by recommending games that align with individual preferences and community trends. Modular training and deployment pipelines ensure scalability and adaptability for ongoing improvements.
+    link: "https://github.com",
+    },
+  {
+    title: "Visual Question Answering System",
+    src: "../public/assets/logo.png",
+    description:
+      "Developed an advanced Visual Question Answering system that integrates BERT for natural language processing and Vision Transformer (ViT) for image analysis. Implemented a web application using Streamlit and deployed it on local server.", //This AI-driven system interprets and answers questions based on visual inputs, achieving high accuracy by leveraging the strengths of both models in understanding context and visual content.
+    link: "https://github.com",
   },
   {
-    title: "Task Management App",
-    src: `${process.env.PUBLIC_URL}/assets/logo.png`,
+    title: "TriModal Retrieval Argument Generation System",
+    src: "../public/assets/logo.png",
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-  },
-  {
-    title: "Portfolio Website",
-    src: `${process.env.PUBLIC_URL}/assets/logo.png`,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-
+      "Developed a Trimodal Retrieval-Augmented Generation (RAG) system that integrates text, image, and audio modalities to enhance content understanding and response generation.", //The system combines advanced retrieval techniques with generative models, delivering contextually rich and accurate outputs across multiple data types.
+    link: "https://github.com",
   },
   {
     title: "Blogging Platform",
-    src: `${process.env.PUBLIC_URL}/assets/logo.png`,
+    src: "../public/assets/logo.png",
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-  },
+      "Built a dynamic and responsive blog platform using React and TypeScript. The platform offers a seamless user experience with features like real-time content updates, intuitive navigation, and customizable themes.", // Designed with scalability and maintainability in mind, the project showcases a modern approach to web development with strong type safety and component-based architecture.
+    link: "https://github.com",
+    },
 ];
 
 // Footer
@@ -204,21 +211,21 @@ export const service:service[] = [
     ],
     },
     {
-      title: "Service",
+      title: "Entertainment",
       components: [ {
-          name: "Blog",
+          name: "Channels",
           url: "",
         },
         {
-          name: "Knowledge",
+          name: "Academics",
           url: "",
         },
         {
-          name: "News",
+          name: "Movies",
           url: "",
         },
         {
-          name: "Sponors",
+          name: "Papers",
           url: "",
         },
       ],
