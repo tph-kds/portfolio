@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import AnimationText from '@/components/functions/AnimationText';
 import { TextValueProps } from '@/contants/types';
+import logo from "@/../public/assets/logo_1.png";
 
 const Aboutme = () => {
     const isDark = isCheckedMode();
@@ -97,7 +98,7 @@ const Aboutme = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 className='w-full lg:w-1/2 lg:p-8'>
                 <div className={`flex ${styles.flexCenter} `}>
-                    <img src="../public/assets/logo.png" alt="my-image" 
+                    <img src={logo} alt="my-image" 
                          className='rounded-2xl'    
                     />
                 </div>
