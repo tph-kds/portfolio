@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import ThemeToggle from '@/components/mode/Darkmode';
 import UseTheme from '@/context/CreateContext';
 import isCheckedMode from '@/components/functions/ischeckedMode';
+import logo from "../../public/assets/logo_1.png";
 
 
 
@@ -50,7 +51,7 @@ const NavBar = () => {
         {/* <div className='flex flex-shrink-0 items-center'>
         </div> */}
         {/* <div className='m-8 flex  items-center justify-center gap-4 text-2xl'> */}
-          <img src="../public/assets/logo_1.png" 
+          <img src={logo} 
             className={`sm:w-[100px] sm:h-[100px] w-[50px] h-[50px] rounded-full cursor-pointer transition-transform transition-shadow duration-300 ease-in-out transform hover:scale-110 hover:shadow-md hover:border-spacing-x-5 ${isDark ? "hover:border-l-light-2 hover:border-b-2 hover:shadow-emerald-300" : "hover:border-l-light-4 hover:border-b-2 hover:shadow-rose-600"}  `}
             // transition-all duration-300 hover:bg-white hover:border-transparent hover:bg-clip-padding hover:bg-origin-border hover:bg-gradient-to-r hover:from-green-300 hover:to-teal-100" 
             alt="logo" 

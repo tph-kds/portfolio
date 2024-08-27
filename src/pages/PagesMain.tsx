@@ -6,6 +6,7 @@ import { FaBattleNet } from "react-icons/fa";
 import isCheckedMode from '@/components/functions/ischeckedMode';
 import { motion } from 'framer-motion';
 import motionH1  from '../components/functions/motion'
+import logo from "../../public/assets/bg.png";
 
 const pagesmain = () => {
   const isDark = isCheckedMode();
@@ -69,7 +70,7 @@ const pagesmain = () => {
 
           className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
           <img 
-          src="../public/assets/bg.png"  
+          src={logo}  
           alt="background" 
           className='w-[100%] h-[100%] relative z-[5] box-s rounded-3xl'
           />
