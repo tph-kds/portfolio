@@ -1,4 +1,8 @@
 import logo from "../../public/assets/logo.png"
+import { ReactElement } from 'react';
+
+
+
 // navLinks
 type navLinks = {
     id: string;
@@ -232,6 +236,17 @@ export const service:service[] = [
       },
 
 ];
+
+
+/// Setup Experience Data
+// Configuration Constants
+export const MARBLE_SIZE: number = 32; // px, size of the main scrolling dot
+export const MARKER_DOT_SIZE: number = 16; // px, size of the dots on the timeline for each item
+export const LINE_AMPLITUDE: number = 60; // px, horizontal deviation of the S-curve for the line and dots
+export const QUOTE_OFFSET_MD: number = 30; // px, horizontal offset for the quote on medium screens
+// Placeholder icons using Unicode escape sequences (unchanged)
+
+
 
 
 

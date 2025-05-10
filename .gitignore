@@ -27,3 +27,5 @@ public/constants
 *.njsproj
 *.sln
 *.sw?
+
+tests/*

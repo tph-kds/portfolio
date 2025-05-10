@@ -120,7 +120,7 @@ const Aboutme = () => {
             </motion.div>
         </div>
 
-        <div className='flex w-full justify-around sm:m-12 m-0'>
+        <div className='flex w-full justify-around sm:my-4 my-0'>
             {about_skill.map((skill, index) => (
                 <div key={skill.id} className='flex flex-row items-center sm:gap-2 '>
                     <div className='flex flex-col px-4'>
