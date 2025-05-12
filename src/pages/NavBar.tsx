@@ -111,7 +111,7 @@ const NavBar = () => {
             }
           </div>
           <div className='flex list-none sm:flex hidden justify-end items-center'>
-            <Link to={"https://www.linkedin.com/in/phi-h%C3%B9ng-tr%E1%BA%A7n-64b52031b/"} target="_blank" rel="noreferrer">
+            <Link to={"https://www.linkedin.com/in/phihungtran"} target="_blank" rel="noreferrer">
               <FaLinkedin className={`w-[25px] h-[25px] mx-2 cursor-pointer transition-transform transition-shadow duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg hover:text-blue-700 
                 hover:border-spacing-x-5 rounded-md ${isDark ? "hover:border-l-light-2 hover:shadow-emerald-400" : "hover:border-l-pink-600  hover:shadow-pink-800"} hover:border-b-2  `}/>
             </Link>

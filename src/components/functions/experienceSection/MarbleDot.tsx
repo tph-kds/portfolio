@@ -9,7 +9,7 @@ const Marble = ({ marbleDotProps , isDark}: { marbleDotProps: MarbleDotProps , i
   const xOffset = marbleDotProps.activeIndex % 2 === 0 ? LINE_AMPLITUDE - LINE_AMPLITUDE / 2 + 10 : -LINE_AMPLITUDE + 20;
   return (
     <div
-      className="absolute rounded-full shadow-xl transition-all duration-300 ease-out"
+      className="hidden md:block md:absolute md:rounded-full md:shadow-xl md:transition-all md:duration-300 md:ease-out"
       style={{
         width: MARBLE_SIZE,
         height: MARBLE_SIZE,

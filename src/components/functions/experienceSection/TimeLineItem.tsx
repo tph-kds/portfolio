@@ -51,9 +51,10 @@ const TimelineItem = React.forwardRef<HTMLDivElement, TimelineItemProps>((timeLi
                    ${timeLineItemProps.isDark ? 'backdrop-blur-lg border border-slate-700 hover:border-cyan-400 bg-slate-800/70' : 'backdrop-blur-lg border border-pink-700 shadow-stone-600 hover:border-pink-600 '}
                    ${timeLineItemProps.isActive ? 'border-cyan-400 shadow-cyan-400/20 scale-105' : 'opacity-70 hover:opacity-100'}
                    ${isEven
-                     ? 'mr-auto md:mr-0 md:ml-[calc(50%+40px)] lg:ml-[calc(50%+50px)]' // Content on the left for even index on md+
-                     : 'ml-auto md:ml-0 md:mr-[calc(50%+40px)] lg:mr-[calc(50%+50px)]' // Content on the right for odd index on md+
+                     ? 'md:mr-0 md:ml-[calc(50%+40px)] lg:ml-[calc(50%+50px)]' // mr-auto md:mr-0 md:ml-[calc(50%+40px)] lg:ml-[calc(50%+50px)] Content on the left for even index on md+
+                     : 'md:ml-0 md:mr-[calc(50%+40px)] lg:mr-[calc(50%+50px)]' // ml-auto md:ml-0 md:mr-[calc(50%+40px)] lg:mr-[calc(50%+50px)] Content on the right for odd index on md+
                    }
+                   md:m-0 m-[45px]
                    `}
         style={{ zIndex: 15 }}
       >
@@ -88,7 +89,7 @@ const TimelineItem = React.forwardRef<HTMLDivElement, TimelineItemProps>((timeLi
         {quote && !isMediumScreen && (
             <div className={`transition-opacity duration-700 ease-in-out mt-4 ${timeLineItemProps.isActive ? 'opacity-100' : 'opacity-0 max-h-0 overflow-hidden'}`}>
                 {timeLineItemProps.isActive && (
-                <p className="text-xs sm:text-sm italic text-cyan-500/80 border-l-2 border-cyan-600 pl-3 py-1">
+                <p className={`"text-xs sm:text-sm italic ${timeLineItemProps.isDark ? 'text-cyan-500/80 border-l-2 border-cyan-600' : 'text-rose-500/80 border-l-2 border-rose-600'} pl-3 py-1"`}>
                     "{quote}"
                 </p>
                 )}

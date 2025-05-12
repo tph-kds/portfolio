@@ -68,44 +68,44 @@ export interface ExperienceData {
 export const experiencesData: ExperienceData[] = [
   {
     id: 'exp1',
-    company: 'FutureTech AI',
-    role: 'AI Research Intern',
-    duration: 'June 2024 - August 2024',
-    description: 'Contributed to cutting-edge research in natural language understanding. Developed and tested new algorithms for sentiment analysis, improving accuracy by 10%. Collaborated with senior researchers on a paper submission.',
+    company: 'Yeah1 Group Corporation',
+    role: 'AI Engineer Intern',
+    duration: 'Nov 2024 - May 2025',
+    description: 'Working on AI project related to film videos and social media. Designing and implementing AI LLM, deep learning, and machine learning models for sentiment analysis and behavioral analytics. Responsible for data preprocessing, model training, and evaluation.',
     icon: <BrainIcon />,
-    technologies: ['Python', 'TensorFlow', 'NLP', 'Git'],
+    technologies: ['Python', 'Pytorch', 'Google Cloud Platform', 'Docker', 'NLP', 'Bitbucket', ],
     quote: "The future belongs to those who believe in the beauty of their AI dreams."
   },
-  {
-    id: 'exp2',
-    company: 'Innovate Solutions Ltd.',
-    role: 'Junior Machine Learning Engineer',
-    duration: 'September 2024 - Present',
-    description: 'Designing and implementing machine learning models for predictive analytics. Working on a client project to optimize logistics using reinforcement learning. Responsible for data preprocessing, model training, and evaluation.',
-    icon: <BriefcaseIcon />,
-    technologies: ['Python', 'Scikit-learn', 'Pandas', 'Docker', 'AWS SageMaker'],
-    quote: "Machine learning is the art of teaching computers to learn from data."
-  },
-  {
-    id: 'exp3',
-    company: 'AI Ethics Initiative (Volunteer)',
-    role: 'Consultant',
-    duration: 'January 2025 - Ongoing',
-    description: 'Providing insights on the ethical implications of emerging AI technologies. Participating in workshops and contributing to white papers on responsible AI development.',
-    icon: <BuildingIcon />,
-    technologies: ['Research', 'Policy Analysis', 'Communication'],
-    quote: "With great power comes great responsibility, especially in AI."
-  },
-  {
-    id: 'exp4',
-    company: 'University Capstone Project',
-    role: 'Lead AI Developer',
-    duration: 'September 2023 - May 2024',
-    description: 'Led a team of 4 to develop an AI-powered recommendation system for an e-commerce platform. Responsible for the core algorithm design, achieving a 20% increase in simulated user engagement.',
-    icon: <BriefcaseIcon />,
-    technologies: ['React', 'Node.js', 'MongoDB', 'Machine Learning', 'Agile'],
-    quote: "Innovation distinguishes between a leader and a follower. We chose to lead with AI."
-  },
+  // {
+  //   id: 'exp2',
+  //   company: 'Innovate Solutions Ltd.',
+  //   role: 'Junior Machine Learning Engineer',
+  //   duration: 'September 2024 - Present',
+  //   description: 'Designing and implementing machine learning models for predictive analytics. Working on a client project to optimize logistics using reinforcement learning. Responsible for data preprocessing, model training, and evaluation.',
+  //   icon: <BriefcaseIcon />,
+  //   technologies: ['Python', 'Scikit-learn', 'Pandas', 'Docker', 'AWS SageMaker'],
+  //   quote: "Machine learning is the art of teaching computers to learn from data."
+  // },
+  // {
+  //   id: 'exp3',
+  //   company: 'AI Ethics Initiative (Volunteer)',
+  //   role: 'Consultant',
+  //   duration: 'January 2025 - Ongoing',
+  //   description: 'Providing insights on the ethical implications of emerging AI technologies. Participating in workshops and contributing to white papers on responsible AI development.',
+  //   icon: <BuildingIcon />,
+  //   technologies: ['Research', 'Policy Analysis', 'Communication'],
+  //   quote: "With great power comes great responsibility, especially in AI."
+  // },
+  // {
+  //   id: 'exp4',
+  //   company: 'University Capstone Project',
+  //   role: 'Lead AI Developer',
+  //   duration: 'September 2023 - May 2024',
+  //   description: 'Led a team of 4 to develop an AI-powered recommendation system for an e-commerce platform. Responsible for the core algorithm design, achieving a 20% increase in simulated user engagement.',
+  //   icon: <BriefcaseIcon />,
+  //   technologies: ['React', 'Node.js', 'MongoDB', 'Machine Learning', 'Agile'],
+  //   quote: "Innovation distinguishes between a leader and a follower. We chose to lead with AI."
+  // },
 ];
 
 
