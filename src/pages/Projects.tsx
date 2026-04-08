@@ -15,7 +15,7 @@ const Projects = () => {
         <motion.div 
             initial={{ opacity: 0 }}
             // animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             whileInView={{ opacity: 1 }}
 
             className='h-full w-full flex flex-col md:flex-row gap-10 px-10 pb-20'>

@@ -125,7 +125,7 @@ const ExperienceSection = () => {
 
   if (experiencesData.length === 0) {
     return (
-      <section ref={sectionRef} className="py-16 md:py-24 bg-slate-900 text-white min-h-[60vh] flex flex-col justify-center relative overflow-hidden">
+      <section id="experiences" ref={sectionRef} className="py-16 md:py-24 bg-slate-900 text-white min-h-[60vh] flex flex-col justify-center relative overflow-hidden">
         <ParticleBackground isDarkMode={isDark} />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-10">
@@ -145,7 +145,7 @@ const ExperienceSection = () => {
 
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden rounded-lg">
+    <section id="experiences" ref={sectionRef} className="py-16 md:py-24 bg-slate-900 text-white relative overflow-hidden rounded-lg">
       <ParticleBackground isDarkMode={isDark} />
       <div className="container mx-auto px-4 relative z-10">
         <motion.h1 

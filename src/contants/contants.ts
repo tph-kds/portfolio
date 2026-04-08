@@ -23,8 +23,8 @@ export const navLinks: navLinks[] = [
     title: "About",
   },
   {
-    id: "experiments",
-    title: "Experiments",
+    id: "experiences",
+    title: "Experiences",
   },
   {
     id: "projects",

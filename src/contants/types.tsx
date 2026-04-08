@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import { BriefcaseBusiness } from 'lucide-react';
 
 export type ThemeContextProps = {
     theme: string;
@@ -43,10 +44,23 @@ export type HandleScrollProps = {
 }
 
 
+type EmojiIconProps = {
+  className?: string;
+};
 
-export const BriefcaseIcon = () => <span role="img" aria-label="briefcase">&#x1F4BC;</span>;
-export const BuildingIcon = () => <span role="img" aria-label="building">&#x1F3E2;</span>;
-export const BrainIcon = () => <span role="img" aria-label="brain">&#x1F9E0;</span>;
+export const BriefcaseIcon = ({ className }: EmojiIconProps) => (
+  <BriefcaseBusiness aria-label="briefcase" size={18} className={className} />
+);
+export const BuildingIcon = ({ className }: EmojiIconProps) => (
+  <span role="img" aria-label="building" className={className}>
+    &#x1F3E2;
+  </span>
+);
+export const BrainIcon = ({ className }: EmojiIconProps) => (
+  <span role="img" aria-label="brain" className={className}>
+    &#x1F9E0;
+  </span>
+);
 
 
 
@@ -70,22 +84,22 @@ export const experiencesData: ExperienceData[] = [
     id: 'exp1',
     company: 'Yeah1 Group Corporation',
     role: 'AI Engineer Intern',
-    duration: 'Nov 2024 - May 2025',
+    duration: 'November 2024 - May 2025',
     description: 'Working on AI project related to film videos and social media. Designing and implementing AI LLM, deep learning, and machine learning models for sentiment analysis and behavioral analytics. Responsible for data preprocessing, model training, and evaluation.',
     icon: <BrainIcon />,
     technologies: ['Python', 'Pytorch', 'Google Cloud Platform', 'Docker', 'NLP', 'Bitbucket', ],
     quote: "The future belongs to those who believe in the beauty of their AI dreams."
   },
-  // {
-  //   id: 'exp2',
-  //   company: 'Innovate Solutions Ltd.',
-  //   role: 'Junior Machine Learning Engineer',
-  //   duration: 'September 2024 - Present',
-  //   description: 'Designing and implementing machine learning models for predictive analytics. Working on a client project to optimize logistics using reinforcement learning. Responsible for data preprocessing, model training, and evaluation.',
-  //   icon: <BriefcaseIcon />,
-  //   technologies: ['Python', 'Scikit-learn', 'Pandas', 'Docker', 'AWS SageMaker'],
-  //   quote: "Machine learning is the art of teaching computers to learn from data."
-  // },
+  {
+    id: 'exp2',
+    company: 'Golden Owl Solutions',
+    role: 'AI Engineer Intern',
+    duration: 'November 2025 - April 2026',
+    description: 'Architected and deployed production-ready AI workflows, including an LLM-powered Text-to-SQL system that accelerated enterprise analytics. Orchestrated low-latency inference services using Triton and developed contextual memory modules for agentic AI chatbots.',
+    icon: <BriefcaseIcon className="text-amber-300" />,
+    technologies: ['PyTorch', 'vLLM', 'Triton Inference Server', 'MCP', 'Docker', 'FastAPI', 'LangChain'],
+    quote: "Bridging the gap between applied AI research and scalable, low-latency production environments."
+  },
   // {
   //   id: 'exp3',
   //   company: 'AI Ethics Initiative (Volunteer)',
